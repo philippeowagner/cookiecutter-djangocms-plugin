@@ -1,0 +1,11 @@
+{
+	"package_name":"myplugin",
+	"plugin_name": "MyCMSPlugin",
+	"model_name":"MyCMSPluginModel",
+	"plugin_verbose_name":"My CMS Plugin",
+	"plugin_module": "Generic",
+	"version": "0.0.1",
+	"description": "A short description of this plugin.",
+	"text_enabled": "n",
+	"allow_children": "n"
+}

@@ -1,0 +1,9 @@
+{% raw %}{% load cms_tags %}{% endraw %}
+
+<div class="{{cookiecutter.package_name}}">
+{% if cookiecutter.allow_children == "y" or cookiecutter.allow_children == "Y" %}{% raw %}
+	{% for plugin in instance.child_plugin_instances %}
+		{% render_plugin plugin %}
+	{% endfor %}{% endraw %}
+{% endif%}
+</div>
