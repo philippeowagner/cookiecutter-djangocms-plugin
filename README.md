@@ -73,7 +73,9 @@ Now take a look at your new plugin.
         render_template = 'cms/plugins/link.html'
 
         text_enabled = True
-
+        
+    	allow_children = True
+    	
         def render(self, context, instance, placeholder):
             context = super(LinkPlugin, self) \
                 .render(context, instance, placeholder)
