@@ -16,7 +16,7 @@ class {{ cookiecutter.plugin_name}}(CMSPluginBase):
     render_template = 'cms/plugins/{{ cookiecutter.package_name }}.html'
 {% if cookiecutter.text_enabled == "y" or cookiecutter.text_enabled == "Y" %}
     text_enabled = True
-{% elif cookiecutter.allow_children == "y" or cookiecutter.allow_children == "Y" %}
+{% endif%}{% if cookiecutter.allow_children == "y" or cookiecutter.allow_children == "Y" %}
     allow_children = True
 {% endif%}
     def render(self, context, instance, placeholder):
