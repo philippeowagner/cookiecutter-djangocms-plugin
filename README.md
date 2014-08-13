@@ -104,8 +104,8 @@ Now take a look at your new plugin. Also don’t forget to add the newly created
     <div class="link">
     	{# parent plugin template content goes here #}
         {% for plugin in instance.child_plugin_instances %}
-		{% render_plugin plugin %}
-	{% endfor %}
+			{% render_plugin plugin %}
+		{% endfor %}
     </div>
     
 
