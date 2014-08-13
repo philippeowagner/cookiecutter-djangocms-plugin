@@ -39,7 +39,7 @@ working directory, based on those values. For example:
     text_enabled (default is "n")? y
     allow_children (default is "n")? y
 
-Now take a look at your new plugin.
+Now take a look at your new plugin. Also don’t forget to add the newly created plugin to settings.INSTALLED_APPS.
 
     link/
       ├── __init__.py
