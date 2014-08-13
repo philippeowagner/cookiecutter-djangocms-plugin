@@ -39,7 +39,7 @@ working directory, based on those values. For example:
     text_enabled (default is "n")? y
     allow_children (default is "n")? y
 
-Now take a look at your new plugin. Also don’t forget to add the newly created plugin to settings.INSTALLED_APPS.
+Now take a look at your new plugin. Also don’t forget to add the newly created plugin to `settings.INSTALLED_APPS`.
 
     link/
       ├── __init__.py
@@ -97,17 +97,19 @@ Now take a look at your new plugin. Also don’t forget to add the newly created
 
         pass
         
-**link.html**
+**link.html** (plugin template) 
 
     {% load cms_tags %}
 
     <div class="link">
+    	{# parent plugin template content goes here #}
         {% for plugin in instance.child_plugin_instances %}
-		        {% render_plugin plugin %}
-	      {% endfor %}
+		{% render_plugin plugin %}
+	{% endfor %}
     </div>
     
-   Awesome, right? 
+
+Awesome, right? 
   
 Useful Links
 ------------
